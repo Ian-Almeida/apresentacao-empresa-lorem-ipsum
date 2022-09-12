@@ -1,0 +1,211 @@
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+  }
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+  }
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSnhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+  }
+
+* {
+    font-family: 'Open Sans';
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+}
+
+.left-container {
+    display: flex;
+    padding-left: 60px;
+}
+
+.logo-container {
+    width: 34px;
+    height: 34px;
+    background: #515070;
+}
+
+.logo-text-container {
+    font-size: 9pt;
+    color: #515070;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.logo-container > img {
+    position: relative;
+    top: 7px;
+    left: 6px;
+}
+
+.hamburguer {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 60px;
+    padding-right: 60px;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-end;
+    padding-bottom: 8px;
+}
+
+.menu > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: ease;
+    height: 100%;
+    transform: translateY(10px);
+    transition: border 0.2s ease, transform 0.2s ease;
+    text-decoration: none;
+    color: #515070;
+}
+
+.menu > a:hover {
+    cursor: pointer;
+    border-bottom: 2px solid #515070;
+    transform: translateY(0px);
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    height: 200px;
+} 
+
+.footer-container {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.footer-container > .first {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-container > .first > .left-container {
+    padding-left: 40px;
+}
+
+.footer-container > .second {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+}
+
+
+.footer-container > .second > .menu {
+    justify-content: flex-start;
+    padding-right: 20px;
+    padding-bottom: 0;
+}
+
+.footer-container > .second > .copyright-text-full {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 29px;
+    color: #898989;
+}
+
+.footer-container > .second > .copyright-text-mobile {
+    display: none;
+}
+
+@media (max-width: 720px) {
+
+    /* HEADER */
+    .menu {
+        display: none;
+    }
+
+    .logo-container {
+        margin-right: 20px;
+    }
+
+    .logo-text-container {
+        display: none;
+    }
+
+    .hamburguer {
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+    }
+
+    .hamburguer div {
+        width: 35px;
+        height: 5px;
+        background: #515070;
+        margin: 4px;
+        border-radius: 4px;
+    }
+
+    /* FOOTER */
+    footer {
+        height: 100px;
+    }
+
+    .footer-container {
+        display: flex;
+    }
+
+    .footer-container > .first > .left-container > .logo-text-container  {
+        display: block;
+        font-size: 9pt;
+        color: #515070;
+        margin-left: 10px;
+        font-weight: bold;
+    }
+
+    .footer-container > .first > img {
+        display: none;
+    }
+
+    .footer-container > .second > img {
+        display: none;
+    }
+
+    .footer-container > .second > .copyright-text-full {
+        display: none;
+    }
+
+    .footer-container > .second > .copyright-text-mobile {
+        display: block;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 29px;
+        color: #898989;
+    }
+}
