@@ -28,6 +28,17 @@ body {
     box-sizing: border-box;
 }
 
+.overlay {
+    content: "";
+    background: rgba(0, 0, 0, 0.8);
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
 /* HEADER */
 .header {
     display: flex;
@@ -179,6 +190,10 @@ footer {
 
     .footer-container {
         display: flex;
+    }
+
+    .footer-container > .first > .left-container {
+        padding-left: 0px;
     }
 
     .footer-container > .first > .left-container > .logo-text-container  {

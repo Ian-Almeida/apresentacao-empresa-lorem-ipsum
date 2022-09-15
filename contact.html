@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="contact.css">
+        <link rel="stylesheet" href="header-footer.css">
+    </head>
+    <body>
+        <div class="header">
+            <div class="hamburguer">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <div class="left-container">
+                <div class="logo-container">
+                    <img src="logo.png" alt="logo">
+                </div>
+                <div class="logo-text-container">
+                    <div>LOREM</div>
+                    <div>IPSUM</div>
+                </div>
+            </div>
+            
+            <ul class="menu">
+                <a href="/">Home</a>
+                <a href="/about.html">Sobre nós</a>
+                <a href="/#services">Serviços</a>
+                <a href="/contact.html">Contato</a>
+            </ul>
+        </div>
+
+        <div class="contact-home-container">
+            <div class="img-container">
+                <img class="overlay" src="images/contact-banner.png">
+            </div>
+            
+            <div class="contact-home-content ">
+                <div class="title">Contato</div>
+                <div class="subtitle">
+                    Olá, somos a Lorem Ipsum.
+                    Nosso trabalho é desenvolver textos de marcação.
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-container">
+            <div class="send-message-container">
+                <div class="send-message-header">
+                    <div class="title">Envie-nos uma mensagem</div>
+                    <img src="images/ENVELOP.png">
+                </div>
+
+                <form class="form-container-full">
+                    <div class="input-row">
+                        <div class="input-container">
+                            <label for="nome">Nome</label>
+                            <input class="input-border" id="nome" placeholder="Ex.: José Maria da Silva">
+                            <span class="focus-border"></span>
+                        </div>
+    
+                        <div class="input-container">
+                            <label for="email">E-mail</label>
+                            <input class="input-border" id="email" placeholder="Ex.: seuemail@email.com">
+                            <span class="focus-border"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="input-row">
+                        <div class="input-container">
+                            <label for="ramo">Ramo em que atua</label>
+                            <select class="input-border" name="ramo" id="ramo">
+                                <option disabled selected hidden>Selecione...</option>
+                            </select>
+                            <span class="focus-border"></span>
+                        </div>
+    
+                        <div class="input-container">
+                            <label for="assunto">Assunto</label>
+
+                            <div class="radios-container input-border">
+                                <div class="radio-content">
+                                    <input id="radio1" type="radio" name="assunto">
+                                    <label for="radio1">Investimento</label>
+                                </div>
+                                <div class="radio-content">
+                                    <input id="radio2" type="radio" name="assunto">
+                                    <label for="radio2">Contratação</label>
+                                </div>
+                            </div>
+
+                            <span class="focus-border"></span>
+                        </div>
+                    </div>
+
+                    <div class="input-row">
+                        <div class="input-container">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea class="input-border" placeholder="Digite sua mensagem aqui"></textarea>
+                            <span class="focus-border"></span>
+                        </div>
+                    </div>
+
+                    <div class="actions-container">
+
+                        <div class="policy-container">
+                            <input id="privacyPolicy" type="checkbox"></input>
+                            <label for="privacyPolicy">Li e concordo com a política de privacidade</label>
+                        </div>
+
+                        <button class="submit-btn">
+                            <span>ENVIAR</span>
+                            <div class="arrow-container">
+                                <div class="top"></div>
+                                <div class="bottom"></div>
+                            </div>
+                        </button>
+                    </div>
+                </form>
+
+                <form class="form-container-mobile">
+                    <div class="input-row">
+                        <div class="input-container">
+                            <label for="nome">Nome</label>
+                            <input class="input-border" id="nome" placeholder="Ex.: José Maria da Silva">
+                            <span class="focus-border"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="input-row">
+                        <div class="input-container">
+                            <label for="email">E-mail</label>
+                            <input class="input-border" id="email" placeholder="Ex.: seuemail@email.com">
+                            <span class="focus-border"></span>
+                        </div>
+                    </div>
+
+                    <div class="input-row">
+                        <div class="input-container">
+                            <label for="assunto">Assunto</label>
+
+                            <div class="radios-container">
+                                <div class="radio-content">
+                                    <input id="radio1" type="radio" name="assunto">
+                                    <label for="radio1">Investimento</label>
+                                </div>
+                                <div class="radio-content">
+                                    <input id="radio2" type="radio" name="assunto">
+                                    <label for="radio2">Contratação</label>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="input-row">
+                        <div class="input-container">
+                            <label for="ramo">Ramo em que atua</label>
+                            <select class="input-border" name="ramo" id="ramo">
+                                <option disabled selected hidden>Selecione...</option>
+                            </select>
+                            <span class="focus-border"></span>
+                        </div>
+                    </div>
+
+                    <div class="input-row">
+                        <div class="input-container">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea class="input-border" placeholder="Digite sua mensagem aqui"></textarea>
+                            <span class="focus-border"></span>
+                        </div>
+                    </div>
+
+                    <div class="actions-container">
+
+                        <div class="policy-container">
+                            <input id="privacyPolicy" type="checkbox"></input>
+                            <label for="privacyPolicy">Li e concordo com a política de privacidade</label>
+                        </div>
+
+                        <button class="submit-btn">
+                            <span>ENVIAR</span>
+                            <div class="arrow-container">
+                                <div class="top"></div>
+                                <div class="bottom"></div>
+                            </div>
+                        </button>
+                    </div>
+                    
+                </form>
+
+            </div>
+            <div class="contact-info-container">
+                <div class="contact-info-content">
+                    <div class="title">Informações de contato</div>
+                    
+                    <div class="infos">
+                        <div class="endereco">
+                            <img src="images/localization-icon.png">
+                            <div>Av. Theodomiro Porto da Fonseca, 3101 - Cristo Rei, São Leopoldo - RS, 93022-715</div>
+                        </div>
+                        <div class="phone">
+                            <img src="images/phone-icon.png">
+                            <div>(51) 3081-3600</div>
+                        </div>
+                        <div class="email">
+                            <img src="images/envelop-white-icon.png">
+                            <div>contato@loremipsungram.com</div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+
+    </body>
+
+    <footer>
+        <div class="footer-container">
+
+            <div class="first">
+                
+                <div class="left-container">
+                    <div class="logo-container">
+                        <img src="logo.png" alt="logo">
+                    </div>
+                    <div class="logo-text-container">
+                        <div>LOREM</div>
+                        <div>IPSUM</div>
+                    </div>
+                </div>
+
+                <img style="padding-right: 25px" src="images/CRESCER LOGO.png" width="80" height="40">
+            </div>
+
+            <div class="second">
+
+                <ul class="menu">
+                    <a href="/">Home</a>
+                    <a href="/about.html">Sobre nós</a>
+                    <a href="/#services">Serviços</a>
+                    <a href="/contact.html">Contato</a>
+                </ul>
+
+                <div class="copyright-text-full">Copyright ©. Todos os direitos reservados à Lorem Ipsum.</div>
+                <div class="copyright-text-mobile">© Copyright 2019 Todos os direitos</div>
+            </div>
+        </div>
+    </footer>
+
+</html>
